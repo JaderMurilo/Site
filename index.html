@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jader Murilo - Carteira Digital</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="carteira">
+    <!-- Foto com rotação -->
+    <div class="foto-container" onclick="virarCartao()">
+      <div class="cartao" id="cartao">
+        <div class="frente">
+          <img src="foto-exemplo.jpg" alt="Minha Foto" />
+          <h2>Jader Murilo</h2>
+        </div>
+        <div class="verso">
+          <h3>Contatos</h3>
+          <p>Email: jadermurilo@email.com</p>
+          <p>Telefone: (11) 91234-5678</p>
+          <p>GitHub: github.com/JaderMurilo</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Abas da carteira -->
+    <div class="abas-container">
+      <div class="aba" onclick="abrirAba(this, 'bio')">
+        <span>Biografia</span>
+        <div class="conteudo-aba" id="bio">
+          <p>Sou estudante de Engenharia de Software, apaixonado por tecnologia e inovação.</p>
+        </div>
+      </div>
+      <div class="aba" onclick="abrirAba(this, 'formacao')">
+        <span>Formação</span>
+        <div class="conteudo-aba" id="formacao">
+          <p>Curso Técnico em Administração e atualmente cursando Engenharia de Software.</p>
+        </div>
+      </div>
+      <div class="aba" onclick="abrirAba(this, 'experiencias')">
+        <span>Experiências</span>
+        <div class="conteudo-aba" id="experiencias">
+          <p>Atuação com suporte técnico, expedição e desenvolvimento de projetos pessoais como sites e jogos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
